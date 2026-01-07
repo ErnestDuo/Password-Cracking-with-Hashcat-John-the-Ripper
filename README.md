@@ -30,9 +30,7 @@ Plaintext passwords were manually hashed using `md5sum` and stored in a file for
 ```bash
 echo -n 'Password' | md5sum | awk '{ print $1 }' > pw_hashes.txt
 echo -n 'Password123' | md5sum | awk '{ print $1 }' >> pw_hashes.txt
-echo -n 'pa$$w0rD' | md5sum | awk '{ print $1 }' >> pw_hashes.txt
 echo -n 'Password123' | md5sum | awk '{ print $1 }' >> pw_hashes.txt
-echo -n 'Letmein' | md5sum | awk '{ print $1 }' >> pw_hashes.txt
 echo -n 'Letmein' | md5sum | awk '{ print $1 }' >> pw_hashes.txt
 echo -n '1234abcd' | md5sum | awk '{ print $1 }' >> pw_hashes.txt
 ```
